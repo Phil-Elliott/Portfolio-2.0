@@ -1,0 +1,56 @@
+$bg-color: #0a192f;
+$light-color: #ccd6f6;
+$green-color: #64ffda;
+
+.navbar {
+  background-color: $bg-color;
+  font-family: "Roboto Mono", monospace;
+  height: 80px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 100;
+
+  ul {
+    display: flex;
+
+    li {
+      font-size: 15px;
+      list-style: none;
+      padding: 10px 20px;
+
+      .resume-btn {
+        background-color: transparent;
+        border: $green-color 1px solid;
+        border-radius: 5px;
+        color: $green-color;
+        padding: 8px 16px;
+
+        &:hover {
+          background-color: rgb(100, 255, 218, 0.1);
+        }
+      }
+
+      a {
+        color: $light-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar {
+    background-color: $bg-color;
+    font-family: "Roboto Mono", monospace;
+    height: 80px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 100;
+  }
+}

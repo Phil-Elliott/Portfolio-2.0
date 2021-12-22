@@ -1,0 +1,21 @@
+import React from "react"
+import "./Projects.scss"
+import Project1 from "./Project/Project1"
+import Project2 from "./Project/Project2"
+import Project3 from "./Project/Project3"
+
+const Projects = () => {
+  return (
+    <div id="projects">
+      <div className="heading">
+        <h2>Some Things I’ve Built</h2>
+        <span></span>
+      </div>
+      <Project1 />
+      <Project2 />
+      <Project3 />
+    </div>
+  )
+}
+
+export default Projects
