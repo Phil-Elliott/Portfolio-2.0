@@ -1,10 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Navbar.scss"
 
 const Navbar = () => {
+  const [navClass, setNavClass] = useState("nav-nav")
+
+  // Changes the nav to hamburger menu based off of page size
+  const changeClass = () => {
+    navClass === "nav-nav"
+      ? setNavClass("nav-nav active-nav")
+      : setNavClass("nav-nav")
+  }
+
   return (
     <div className="navbar">
-      <ul>
+      <button href="#" className="toggle-button" onClick={changeClass}>
+        <span className="bar1"></span>
+        <span className="bar2"></span>
+        <span className="bar3"></span>
+      </button>
+      <ul className={navClass}>
         <li>
           <a href="#about">About</a>
         </li>

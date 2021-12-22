@@ -94,17 +94,49 @@ $green-color: #64ffda;
 
 @media only screen and (max-width: 850px) {
   #projects {
-    max-width: 90%;
+    padding: 4rem 0;
+    max-width: 85%;
 
     .heading {
       grid-template-columns: 1fr;
-    }
 
+      span {
+        display: none;
+      }
+    }
     .project {
       grid-template-columns: 1fr;
+      padding: 5px 0;
 
       .gif {
         display: none;
+      }
+      .project-info {
+        align-items: flex-start;
+
+        .project-heading {
+          padding-left: 7px;
+        }
+        a {
+          padding-left: 5px;
+        }
+        .project-description {
+          font-size: 15px;
+          margin-top: 1rem;
+          padding: 15px;
+          position: relative;
+          text-align: left;
+          width: 19rem;
+        }
+        ul {
+          display: flex;
+          margin-top: 1rem;
+
+          li {
+            font-size: 13px;
+            padding: 0 5px;
+          }
+        }
       }
     }
   }

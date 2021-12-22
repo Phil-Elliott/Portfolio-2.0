@@ -17,6 +17,16 @@ const Skills = () => {
         <p className="logo-set3 post">PostgreSQL </p>
         <p className="logo-set3 es6">ES6 </p>
       </div>
+      <ul className="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Sass</li>
+        <li>Javascript</li>
+        <li>React</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>PostgreSQL</li>
+      </ul>
     </div>
   )
 }

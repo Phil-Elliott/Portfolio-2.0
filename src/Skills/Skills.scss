@@ -54,49 +54,40 @@ $green-color: #64ffda;
     }
   }
 }
+.skills-list {
+  display: none;
+}
 
 @media only screen and (max-width: 850px) {
   #skills {
-    max-width: 95%;
-  }
-  .logos {
-    color: $green-color;
-    display: flex;
-    justify-content: center;
+    padding: 5rem 0 2rem;
+    max-width: 85%;
 
-    .logo-set1 {
-      font-size: 1rem;
-      margin: 0rem;
+    h1 {
+      color: $light-color;
+      padding-bottom: 2.5rem;
+      text-align: left;
     }
-    .logo-set2 {
-      font-size: 0.5rem;
-      opacity: 0.75;
-      position: relative;
-    }
-    .react {
-      left: 24rem;
-      margin-top: 3rem;
-    }
-    .node {
-      margin: 3rem 0 0 21rem;
-    }
-    .sass {
-      margin-top: 22rem;
-    }
-    .logo-set3 {
+  }
+  .logo-set1 {
+    display: none;
+  }
+  .logo-set2 {
+    display: none;
+  }
+  .logo-set3 {
+    display: none;
+  }
+  .skills-list {
+    color: $green-color;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    list-style: none;
+    padding-left: 0rem;
+
+    li {
       font-size: 1.4rem;
-      opacity: 0.5;
-      position: relative;
-    }
-    .express {
-      margin: 22rem 0 0 3rem;
-    }
-    .post {
-      left: 24rem;
-      margin-top: 22rem;
-    }
-    .es6 {
-      margin-top: 1.5rem;
+      padding: 0.4rem 0;
     }
   }
 }

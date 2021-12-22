@@ -6,7 +6,7 @@ $green-color: #64ffda;
   background-color: $bg-color;
   font-family: "Roboto Mono", monospace;
   height: 80px;
-  width: 95%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -41,16 +41,61 @@ $green-color: #64ffda;
   }
 }
 
-@media only screen and (max-width: 850px) {
-  .navbar {
-    background-color: $bg-color;
-    font-family: "Roboto Mono", monospace;
-    height: 80px;
-    width: 95%;
+.toggle-button {
+  position: absolute;
+  background-color: $bg-color;
+  border: none;
+  cursor: pointer;
+  top: 2.8rem;
+  right: 15rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50px;
+  height: 30px;
+
+  span {
+    height: 3px;
+    background-color: $green-color;
+    border-radius: 10px;
+  }
+  .bar1 {
+    width: 100%;
+  }
+  .bar2 {
+    width: 80%;
+  }
+  .bar3 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .nav-nav {
     display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .toggle-button {
+    display: flex;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .nav-nav {
+    background-color: $bg-color;
+    display: none !important;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    z-index: 100;
+    padding-top: 18rem;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .active-nav {
+    display: flex !important;
   }
 }
