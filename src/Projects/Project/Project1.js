@@ -9,16 +9,16 @@ const Project1 = () => {
         <p className="project-heading">Featured Project</p>
         <a href="#">FitMax Health App</a>
         <p className="project-description">
-          A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
-          more. Available on Visual Studio Marketplace, Package Control, Atom
-          Package Manager, and npm.
+          A fitness app that keeps a record of the users cardio activities and
+          goals. Includes user authenification and a database to keep records of
+          all cardio activities.
         </p>
         <ul>
-          <li>Sass</li>
           <li>React</li>
           <li>Node</li>
           <li>Express</li>
           <li>PostgreSQL</li>
+          <li>Sass</li>
         </ul>
         <div className="icons">
           <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">

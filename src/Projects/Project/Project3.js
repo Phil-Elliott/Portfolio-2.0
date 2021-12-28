@@ -9,16 +9,13 @@ const Project3 = () => {
         <p className="project-heading">Featured Project</p>
         <a href="#">Portfolio</a>
         <p className="project-description">
-          A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
-          more. Available on Visual Studio Marketplace, Package Control, Atom
-          Package Manager, and npm.
+          A website built on React. Used Sass to create a clean and user
+          friendly design. I utilized media queries to make the website fully
+          responsive on all devices.
         </p>
         <ul>
-          <li>Sass</li>
           <li>React</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
+          <li>Sass</li>
         </ul>
         <div className="icons">
           <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">

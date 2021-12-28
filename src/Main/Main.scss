@@ -67,3 +67,26 @@ $green-color: #64ffda;
     }
   }
 }
+
+@media only screen and (max-width: 300px) {
+  #main {
+    padding: 8rem 0 1rem;
+    max-width: 85%;
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

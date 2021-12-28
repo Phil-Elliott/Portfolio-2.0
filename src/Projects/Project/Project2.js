@@ -8,16 +8,16 @@ const Project2 = () => {
         <p className="project-heading">Featured Project</p>
         <a href="#">Quick Brew Website</a>
         <p className="project-description" style={{ textAlign: "left" }}>
-          A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
-          more. Available on Visual Studio Marketplace, Package Control, Atom
-          Package Manager, and npm.
+          A website made for a coffee shop. Provides the user with information
+          and an interactive user interface. Also includes a shop that is
+          connected to stripe.
         </p>
         <ul>
-          <li>Sass</li>
           <li>React</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
+          <li>Sass</li>
+          <li>Commerce.js</li>
+          <li>Stripe</li>
+          <li>Material UI</li>
         </ul>
         <div className="icons">
           <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">

@@ -92,10 +92,15 @@ $green-color: #64ffda;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1300px) {
   #projects {
-    padding: 4rem 0;
-    max-width: 85%;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #projects {
+    max-width: 90%;
 
     .heading {
       grid-template-columns: 1fr;
@@ -104,6 +109,59 @@ $green-color: #64ffda;
         display: none;
       }
     }
+    .project {
+      padding: 5px 0;
+
+      .gif {
+        height: 234px;
+        width: 430px;
+        margin-top: 20px;
+      }
+      .project-info {
+        margin-top: 0;
+
+        .project-description {
+          font-size: 15px;
+          margin-top: 1rem;
+          padding: 15px;
+          position: relative;
+
+          width: 24rem;
+        }
+        ul {
+          margin-top: 1rem;
+
+          li {
+            font-size: 12px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  #projects {
+    .project {
+      .gif {
+        height: 204px;
+        width: 350px;
+        margin-top: 40px;
+      }
+      .project-info {
+        .project-description {
+          width: 21rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #projects {
+    padding: 4rem 0;
+
     .project {
       grid-template-columns: 1fr;
       padding: 5px 0;
@@ -121,22 +179,49 @@ $green-color: #64ffda;
           padding-left: 5px;
         }
         .project-description {
-          font-size: 15px;
-          margin-top: 1rem;
-          padding: 15px;
-          position: relative;
+          font-size: 16px;
+
           text-align: left;
-          width: 19rem;
+          width: 27rem;
         }
         ul {
-          display: flex;
-          margin-top: 1rem;
-
           li {
             font-size: 13px;
             padding: 0 5px;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #projects {
+    .project {
+      .project-info {
+        .project-description {
+          font-size: 15px;
+          width: 18rem;
+        }
+        ul {
+          li {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .project-info {
+    .project-description {
+      font-size: 12px !important;
+      width: 13rem !important;
+    }
+    ul {
+      li {
+        font-size: 7px !important;
       }
     }
   }

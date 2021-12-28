@@ -31,10 +31,8 @@ $green-color: #64ffda;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1200px) {
   #about {
-    max-width: 85%;
-
     .heading {
       grid-template-columns: 1fr;
 
@@ -42,5 +40,11 @@ $green-color: #64ffda;
         display: none;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #about {
+    max-width: 85%;
   }
 }
