@@ -9,8 +9,8 @@ const Project1 = () => {
         <p className="project-heading">Featured Project</p>
         <a href="#">FitMax Health App</a>
         <p className="project-description">
-          A fitness app that keeps a record of the users cardio activities and
-          goals. Includes user authenification and a database to keep records of
+          A fitness app that keeps a record of the user's cardio activities and
+          goals. Includes user authentication and a database to keep records of
           all cardio activities.
         </p>
         <ul>
