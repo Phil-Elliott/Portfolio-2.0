@@ -8,7 +8,7 @@ const Main = () => {
       <h2>Phillip Elliott.</h2>
       <h3>I am a Front End Developer.</h3>
       <p>
-        <a href="#">Hire Me</a>
+        <a href="mailto:PhillipPElliott@gmail.com">Hire Me</a>
       </p>
     </div>
   )

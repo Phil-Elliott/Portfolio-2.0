@@ -12,7 +12,7 @@ const Contact = () => {
         in regards to any opportunities.
       </p>
       <p className="contact-btn">
-        <a href="#">Contact Me</a>
+        <a href="mailto:PhillipPElliott@gmail.com">Contact Me</a>
       </p>
     </div>
   )
