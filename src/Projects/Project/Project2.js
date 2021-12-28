@@ -1,5 +1,6 @@
 import React from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import quickbrew from "./quickbrew.gif"
 
 const Project2 = () => {
   return (
@@ -28,7 +29,9 @@ const Project2 = () => {
           </a>
         </div>
       </div>
-      <div className="gif"></div>
+      <div>
+        <img className="gif" alt="portfolio" src={quickbrew} />
+      </div>
     </div>
   )
 }

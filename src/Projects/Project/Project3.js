@@ -1,10 +1,13 @@
 import React from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import portfolio from "./portfolio.gif"
 
 const Project3 = () => {
   return (
     <div className="project">
-      <div className="gif"></div>
+      <div>
+        <img className="gif" alt="portfolio" src={portfolio} />
+      </div>
       <div className="project-info">
         <p className="project-heading">Featured Project</p>
         <a href="#">Portfolio</a>

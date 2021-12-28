@@ -1,10 +1,13 @@
 import React from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import fitmax from "./fitmax.gif"
 
 const Project1 = () => {
   return (
     <div className="project">
-      <div className="gif"></div>
+      <div className="gif">
+        <img className="gif" alt="fitmax" src={fitmax} />
+      </div>
       <div className="project-info">
         <p className="project-heading">Featured Project</p>
         <a href="#">FitMax Health App</a>
