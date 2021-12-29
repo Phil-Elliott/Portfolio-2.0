@@ -1,4 +1,4 @@
-# Portfolio-2.0
+# Portfolio
 
 A Portfolio website built on react. Used Sass to create a clean and user friendly design. I utilized media queries to make the website fully responsive on all devices.
 
