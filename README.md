@@ -6,5 +6,5 @@ A Portfolio website built on react. Used Sass to create a clean and user friendl
 
 # What I Learned
 
-This was a more simpler project, but I was still able to improve my skills in using React and CSS. I am getting better at using media queries and even thinking about making a project responsive before I build it. 
+This was a more simple project, but I was still able to improve my skills in using React and CSS. I am getting better at using media queries and even thinking about making a project responsive before I build it. 
 
