@@ -10,7 +10,7 @@ const Project1 = () => {
       </div>
       <div className="project-info">
         <p className="project-heading">Featured Project</p>
-        <a href="#">FitMax Health App</a>
+        <a href="https://fitmax.herokuapp.com">FitMax Health App</a>
         <p className="project-description">
           A fitness app that keeps a record of the user's cardio activities and
           goals. Includes user authentication and a database to keep records of
@@ -27,7 +27,7 @@ const Project1 = () => {
           <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
             <FaGithub className="icon" />
           </a>
-          <a href="fitmax.herokuapp.com">
+          <a href="https://fitmax.herokuapp.com">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>

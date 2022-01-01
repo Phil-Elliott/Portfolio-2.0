@@ -7,7 +7,7 @@ const Project2 = () => {
     <div className="project">
       <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
-        <a href="#">Quick Brew Website</a>
+        <a href="https://quick-brew.herokuapp.com">Quick Brew Website</a>
         <p className="project-description" style={{ textAlign: "left" }}>
           A website made for a coffee shop. Provides the user with information
           and an interactive user interface. Also includes a shop that is
@@ -24,7 +24,7 @@ const Project2 = () => {
           <a href="https://github.com/Phil-Elliott/CoffeeShop-React">
             <FaGithub className="icon" />
           </a>
-          <a href="quick-brew.herokuapp.com">
+          <a href="https://quick-brew.herokuapp.com">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>
