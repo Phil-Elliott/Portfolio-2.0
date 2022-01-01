@@ -27,7 +27,7 @@ const Project1 = () => {
           <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
             <FaGithub className="icon" />
           </a>
-          <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
+          <a href="fitmax.herokuapp.com">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>

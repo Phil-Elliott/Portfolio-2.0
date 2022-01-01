@@ -21,10 +21,10 @@ const Project2 = () => {
           <li>Material UI</li>
         </ul>
         <div className="icons">
-          <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
+          <a href="https://github.com/Phil-Elliott/CoffeeShop-React">
             <FaGithub className="icon" />
           </a>
-          <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
+          <a href="quick-brew.herokuapp.com">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>

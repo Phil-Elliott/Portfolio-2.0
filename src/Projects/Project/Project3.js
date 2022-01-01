@@ -21,10 +21,10 @@ const Project3 = () => {
           <li>Sass</li>
         </ul>
         <div className="icons">
-          <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
+          <a href="https://github.com/Phil-Elliott/Portfolio-2.0">
             <FaGithub className="icon" />
           </a>
-          <a href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard">
+          <a href="https://github.com/Phil-Elliott/Portfolio-2.0">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>
