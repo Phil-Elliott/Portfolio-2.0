@@ -12,9 +12,11 @@ const Project1 = () => {
         <p className="project-heading">Featured Project</p>
         <a href="https://fitmax.herokuapp.com">FitMax Health App</a>
         <p className="project-description">
-          A fitness app that keeps a record of the user's cardio activities and
-          goals. Includes user authentication and a database to keep records of
-          all cardio activities.
+          The application has been deployed on Heroku, so it could take a little
+          while to load. You can create your own account or use the account and
+          password below.
+          <br />
+          'user@gmail.com' 'password123'
         </p>
         <ul>
           <li>React</li>
