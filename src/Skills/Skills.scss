@@ -4,90 +4,67 @@ $med-color: #8892b0;
 $green-color: #64ffda;
 
 #skills {
-  padding: 8rem 0;
+  padding: 9% 0 35%;
   margin: 0 auto;
   max-width: 65%;
 
   h1 {
     color: $light-color;
-    padding-bottom: 2.5rem;
+    font-size: clamp(1rem, 2.2vw, 4rem);
+    padding-bottom: 10%;
     text-align: center;
   }
   .logos {
+    position: relative;
     color: $green-color;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .logo-set1 {
       font-size: 5rem;
-      margin: 11rem 4rem;
+      font-size: clamp(2rem, 5.25vw, 10rem);
+      position: absolute;
+    }
+    .html {
+      margin: 40% 45% 0 0;
+    }
+    .css {
+      margin: 40% 0 0 0;
+    }
+    .js {
+      margin: 40% 0 0 45%;
     }
     .logo-set2 {
-      font-size: 4.5rem;
+      font-size: clamp(1.5rem, 4.45vw, 8rem);
       opacity: 0.75;
       position: absolute;
     }
     .react {
-      left: 24rem;
-      margin-top: 3rem;
+      margin: 10% 65% 0 0;
     }
     .node {
-      margin: 3rem 0 0 21rem;
+      margin: 10% 0 0 65%;
     }
     .sass {
-      margin-top: 22rem;
+      margin-top: 75%;
     }
     .logo-set3 {
-      font-size: 1.4rem;
-      opacity: 0.5;
+      font-size: clamp(0.8rem, 1.5vw, 3rem);
+      opacity: 0.75;
       position: absolute;
     }
     .express {
-      margin: 22rem 0 0 38rem;
+      margin: 70% 0 0 65%;
     }
     .post {
-      left: 24rem;
-      margin-top: 22rem;
-    }
-    .es6 {
-      margin-top: 1.5rem;
+      margin: 70% 65% 0 0;
     }
   }
-}
-.skills-list {
-  display: none;
 }
 
 @media only screen and (max-width: 1300px) {
   #skills {
-    padding: 5rem 0 2rem;
     max-width: 85%;
-
-    h1 {
-      color: $light-color;
-      padding-bottom: 2.5rem;
-      text-align: left;
-    }
-  }
-  .logo-set1 {
-    display: none;
-  }
-  .logo-set2 {
-    display: none;
-  }
-  .logo-set3 {
-    display: none;
-  }
-  .skills-list {
-    color: $green-color;
-    display: block;
-    font-family: "Roboto Mono", monospace;
-    list-style: none;
-    padding-left: 0rem;
-
-    li {
-      font-size: 1.4rem;
-      padding: 0.4rem 0;
-    }
   }
 }

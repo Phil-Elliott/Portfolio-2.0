@@ -3,33 +3,34 @@ $med-color: #8892b0;
 $green-color: #64ffda;
 
 #main {
-  padding: 12rem 0 8rem;
+  padding: 13.5% 0 8%;
   margin: 0 auto;
   max-width: 65%;
 
   h1 {
     color: $green-color;
     font-family: "Roboto Mono", monospace;
-    font-size: 1.2rem;
-    padding-bottom: 25px;
-    padding-left: 4px;
+    font-size: clamp(0.75rem, 1.1vw, 1.75rem);
+    padding-bottom: 3%;
+    padding-bottom: clamp(1rem, 4%, 4%);
+    padding-left: 0.25%;
   }
 
   h2 {
     color: $light-color;
-    font-size: 3.75rem;
-    padding-bottom: 10px;
+    font-size: clamp(1.25rem, 3.9vw, 7rem);
+    padding-bottom: clamp(0.5rem, 1%, 1%);
   }
 
   h3 {
     color: $med-color;
-    font-size: 3.75rem;
-    padding-bottom: 40px;
+    font-size: clamp(1.25rem, 3.9vw, 7rem);
+    padding-bottom: clamp(1.75rem, 4%, 4%);
   }
 
   p {
-    font-size: 1.2rem;
-    padding-left: 4px;
+    font-size: clamp(0.7rem, 1.25vw, 2rem);
+    padding-left: 0.25%;
 
     a {
       border: $green-color 1px solid;
@@ -49,44 +50,6 @@ $green-color: #64ffda;
   #main {
     padding: 8rem 0 1rem;
     max-width: 85%;
-
-    h1 {
-      font-size: 1rem;
-    }
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 3rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  #main {
-    padding: 8rem 0 1rem;
-    max-width: 85%;
-
-    h1 {
-      font-size: 1rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    h3 {
-      font-size: 2rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
+    margin: 0 auto;
   }
 }

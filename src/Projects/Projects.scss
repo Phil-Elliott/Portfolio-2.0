@@ -13,7 +13,7 @@ $green-color: #64ffda;
     grid-template-columns: 2.6fr 2.25fr 2fr;
     h2 {
       color: $light-color;
-      font-size: 32px;
+      font-size: clamp(1rem, 2.2vw, 4rem);
     }
 
     span {
@@ -22,56 +22,65 @@ $green-color: #64ffda;
       margin-bottom: 18px;
     }
   }
-  .project {
+  .gif-left {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 60px 0;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .gif-right {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .project {
+    padding: 6% 0;
 
     .gif {
       border-radius: 3px;
-      height: 354px;
-      width: 580px;
+      height: 100%;
+      width: 100%;
       object-fit: contain;
     }
     .project-info {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin-top: 30px;
+      margin-top: 5%;
 
       .project-heading {
         color: $green-color;
         font-family: "Roboto Mono", monospace;
-        font-size: 13px;
-        margin: 10px 0;
-        padding-left: 7px;
+        font-size: clamp(0.6rem, 0.85vw, 2rem);
+        margin: 2.5% 0;
+        padding-left: 2%;
       }
       a {
         color: $light-color;
-        font-size: 28px;
-        padding-left: 5px;
+        font-size: clamp(1rem, 1.85vw, 3rem);
+        padding-left: 1.25%;
         text-decoration: none;
       }
-      .project-description {
-        background-color: #112240;
-        border-radius: 3px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        color: $lighter-color;
-        font-size: 15px;
-        margin-top: 6rem;
-        padding: 25px;
-        position: absolute;
-        text-align: right;
-        width: 30rem;
+      .description-container {
+        position: relative;
+        width: 118%;
+        margin-top: 3%;
+        .project-description {
+          background-color: #112240;
+          border-radius: 3px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          color: $lighter-color;
+          font-size: clamp(0.8rem, 0.97vw, 2.5rem);
+          padding: 4.65%;
+          text-align: right;
+          line-height: 150%;
+        }
       }
       ul {
         display: flex;
-        margin-top: 10rem;
+        margin-top: 3%;
 
         li {
           color: $lighter-color;
           font-family: "Roboto Mono", monospace;
-          font-size: 13px;
+          font-size: clamp(0.6rem, 0.85vw, 2rem);
           list-style: none;
           padding: 0 10px;
         }
@@ -82,8 +91,8 @@ $green-color: #64ffda;
 
         .icon {
           cursor: pointer;
-          font-size: 1.15rem;
-          margin: 25px 10px;
+          font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+          margin: 65% 10px;
 
           &:hover {
             color: $green-color;
@@ -96,135 +105,29 @@ $green-color: #64ffda;
 
 @media only screen and (max-width: 1300px) {
   #projects {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   #projects {
     max-width: 90%;
-
-    .heading {
-      grid-template-columns: 1fr;
-
-      span {
-        display: none;
-      }
-    }
-    .project {
-      padding: 5px 0;
-
-      .gif {
-        height: 234px;
-        width: 430px;
-        margin-top: 20px;
-      }
-      .project-info {
-        margin-top: 0;
-
-        .project-description {
-          font-size: 15px;
-          margin-top: 1rem;
-          padding: 15px;
-          position: relative;
-
-          width: 24rem;
-        }
-        ul {
-          margin-top: 1rem;
-
-          li {
-            font-size: 12px;
-            padding: 0 5px;
-          }
-        }
-      }
-    }
+  }
+  .gif-left,
+  .gif-right {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
-
-@media only screen and (max-width: 870px) {
-  #projects {
-    .project {
-      .gif {
-        height: 204px;
-        width: 350px;
-        margin-top: 40px;
-      }
-      .project-info {
-        .project-description {
-          width: 21rem;
-        }
-      }
-    }
+@media only screen and (max-width: 700px) {
+  .gif-left,
+  .gif-right {
+    grid-template-columns: 1fr !important;
   }
-}
-
-@media only screen and (max-width: 730px) {
-  #projects {
-    padding: 4rem 0;
-
-    .project {
-      grid-template-columns: 1fr;
-      padding: 5px 0;
-
-      .gif {
-        display: none;
-      }
-      .project-info {
-        align-items: flex-start;
-
-        .project-heading {
-          padding-left: 7px;
-        }
-        a {
-          padding-left: 5px;
-        }
-        .project-description {
-          font-size: 16px;
-
-          text-align: left;
-          width: 27rem;
-        }
-        ul {
-          li {
-            font-size: 13px;
-            padding: 0 5px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  #projects {
-    .project {
-      .project-info {
-        .project-description {
-          font-size: 15px;
-          width: 18rem;
-        }
-        ul {
-          li {
-            font-size: 10px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 300px) {
   .project-info {
-    .project-description {
-      font-size: 12px !important;
-      width: 13rem !important;
-    }
-    ul {
-      li {
-        font-size: 7px !important;
-      }
-    }
+    grid-column-start: 1 !important;
+    grid-row-start: 1 !important;
+  }
+  .description-container {
+    width: 100% !important;
   }
 }

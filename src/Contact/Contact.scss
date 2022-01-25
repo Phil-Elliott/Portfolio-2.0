@@ -12,22 +12,22 @@ $green-color: #64ffda;
   h1 {
     color: $green-color;
     font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    padding-bottom: 10px;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+    padding-bottom: 2.25%;
   }
   h2 {
     color: $light-color;
-    font-size: 50px;
-    padding-bottom: 13px;
+    font-size: clamp(1.5rem, 3.25vw, 5rem);
+    padding-bottom: 2.75%;
   }
   p {
     color: $med-color;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    line-height: 200%;
   }
   .contact-btn {
-    font-size: 17px;
-    padding-top: 4rem;
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    padding-top: 10%;
 
     a {
       border: $green-color 1px solid;
@@ -43,9 +43,9 @@ $green-color: #64ffda;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 450px) {
   #contact {
-    max-width: 90%;
+    max-width: 70%;
     padding: 2rem 0 8rem;
   }
 }

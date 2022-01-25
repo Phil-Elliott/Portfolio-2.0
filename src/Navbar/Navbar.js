@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./Navbar.scss"
+import Pdf from "./Resume.pdf"
 
 const Navbar = () => {
   const [navClass, setNavClass] = useState("nav-nav")
@@ -29,8 +30,11 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#contact" className="resume-btn">
-            Contact
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a className="resume-btn" href={Pdf} target="_blank" rel="noreferrer">
+            Resume
           </a>
         </li>
       </ul>

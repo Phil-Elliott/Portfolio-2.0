@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://Phil-Elliott.github.io/Portfolio-2.0",
+  "name": "phillip-elliott-portfolio",
+  "homepage": "https://phillip-elliott.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

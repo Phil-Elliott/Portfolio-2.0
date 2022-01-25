@@ -3,6 +3,7 @@ import "./Projects.scss"
 import Project1 from "./Project/Project1"
 import Project2 from "./Project/Project2"
 import Project3 from "./Project/Project3"
+import Project4 from "./Project/Project4"
 
 const Projects = () => {
   return (
@@ -14,6 +15,7 @@ const Projects = () => {
       <Project1 />
       <Project2 />
       <Project3 />
+      <Project4 />
     </div>
   )
 }

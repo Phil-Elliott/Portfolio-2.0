@@ -4,15 +4,17 @@ import quickbrew from "./quickbrew.gif"
 
 const Project2 = () => {
   return (
-    <div className="project">
+    <div className="project gif-right">
       <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
         <a href="https://quick-brew.herokuapp.com">Quick Brew Website</a>
-        <p className="project-description" style={{ textAlign: "left" }}>
-          A website made for a coffee shop. Provides the user with information
-          and an interactive user interface. Also includes a shop that is
-          connected to stripe.
-        </p>
+        <div className="description-container">
+          <p className="project-description" style={{ textAlign: "left" }}>
+            The application has been deployed on Heroku, so it could take a
+            little while to load. If you would like to try to make a payment,
+            then you can use the demo card '4242-4242-4242-4242'.
+          </p>
+        </div>
         <ul>
           <li>React</li>
           <li>Sass</li>
@@ -21,10 +23,13 @@ const Project2 = () => {
           <li>Material UI</li>
         </ul>
         <div className="icons">
-          <a href="https://github.com/Phil-Elliott/CoffeeShop-React">
+          <a
+            aria-label="Github"
+            href="https://github.com/Phil-Elliott/CoffeeShop-React"
+          >
             <FaGithub className="icon" />
           </a>
-          <a href="https://quick-brew.herokuapp.com">
+          <a aria-label="Website" href="https://quick-brew.herokuapp.com">
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>
