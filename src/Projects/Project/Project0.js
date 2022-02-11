@@ -7,7 +7,7 @@ const Project0 = () => {
     <div className="project gif-right">
       <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
-        <a href="https://6205d511a4c4b20008b2f0f1--pedantic-bhabha-23f3dd.netlify.app/">
+        <a href="https://62066f824ae8c30008b24c53--pedantic-bhabha-23f3dd.netlify.app/">
           News App
         </a>
         <div className="description-container">
@@ -31,7 +31,7 @@ const Project0 = () => {
           </a>
           <a
             aria-label="Website"
-            href="https://6205d511a4c4b20008b2f0f1--pedantic-bhabha-23f3dd.netlify.app/"
+            href="https://62066f824ae8c30008b24c53--pedantic-bhabha-23f3dd.netlify.app/"
           >
             <FaExternalLinkAlt className="icon" />
           </a>
