@@ -16,8 +16,6 @@ const Projects = () => {
       <Project0 />
       <Project1 />
       <Project2 />
-      <Project3 />
-      <Project4 />
     </div>
   )
 }

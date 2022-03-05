@@ -1,6 +1,4 @@
-$light-color: #ccd6f6;
-$med-color: #8892b0;
-$green-color: #64ffda;
+@import "./../Shared.scss";
 
 #about {
   padding: 10% 0 4%;
@@ -22,12 +20,43 @@ $green-color: #64ffda;
       margin-bottom: 18px;
     }
   }
-  p {
+}
+
+.about-content-container {
+  display: grid;
+  grid-template-columns: 0.75fr 3fr;
+  gap: 2rem;
+
+  .about-tags {
+    display: flex;
+    flex-direction: column;
     color: $med-color;
-    font-size: clamp(0.8rem, 1.3vw, 2.5rem);
-    line-height: 170%;
-    margin-bottom: 2%;
-    text-indent: 7%;
+    font-size: clamp(0.8rem, 1.1vw, 2.25rem);
+
+    p {
+      cursor: pointer;
+      border-left: $light-color 2px solid;
+      padding: 1rem;
+
+      &:hover {
+        background-color: #112240;
+        color: $green-color;
+      }
+    }
+    .active {
+      border-color: $green-color;
+      color: $green-color;
+    }
+  }
+
+  .about-content {
+    p {
+      color: $med-color;
+      font-size: clamp(0.8rem, 1.1vw, 2.25rem);
+      line-height: 170%;
+      margin-bottom: 2%;
+      text-indent: 7%;
+    }
   }
 }
 
