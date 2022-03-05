@@ -5,6 +5,7 @@ import Main from "./Main/Main"
 import About from "./About/About"
 import Skills from "./Skills/Skills"
 import Projects from "./Projects/Projects"
+import ExtraProjects from "./ExtraProjects/ExtraProjects"
 import Contact from "./Contact/Contact"
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <ExtraProjects />
       <Contact />
     </div>
   )

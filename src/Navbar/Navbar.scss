@@ -1,6 +1,4 @@
-$bg-color: #0a192f;
-$light-color: #ccd6f6;
-$green-color: #64ffda;
+@import "./../Shared.scss";
 
 .navbar {
   background-color: $bg-color;

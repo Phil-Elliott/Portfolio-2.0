@@ -1,0 +1,95 @@
+@import "./../Shared.scss";
+
+#extra-projects {
+  padding: 4rem 0 8rem;
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.extra-heading {
+  color: $light-color;
+  font-size: clamp(0.8rem, 1.25vw, 3.5rem);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.extra-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.extra-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #112240;
+  border-radius: 3px;
+  color: $light-color;
+  padding: 1.5rem;
+  height: 40vh;
+  transition: 0.5s;
+
+  &:hover {
+    margin-top: -10px;
+  }
+
+  h2 {
+    font-size: clamp(1rem, 1.15vw, 1.15vw);
+    padding-bottom: 2rem;
+  }
+
+  p {
+    color: $lighter-color;
+    font-size: clamp(0.9rem, 0.9vw, 2rem);
+  }
+
+  ul {
+    display: flex;
+    font-size: clamp(0.7rem, 0.75vw, 0.75vw);
+    list-style: none;
+    padding-bottom: 1rem;
+
+    li {
+      color: $green-color;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+
+  .icon {
+    color: $lighter-color;
+    cursor: pointer;
+    font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+    margin-left: 20px;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #extra-projects {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .extra-content-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .extra-content-container {
+    grid-template-columns: 1fr;
+  }
+}
