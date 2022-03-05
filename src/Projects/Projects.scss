@@ -46,7 +46,7 @@
       .project-heading {
         color: $green-color;
         font-family: "Roboto Mono", monospace;
-        font-size: clamp(0.6rem, 0.85vw, 2rem);
+        font-size: clamp(0.8rem, 0.85vw, 2rem);
         margin: 2.5% 0;
         padding-left: 2%;
       }
@@ -104,6 +104,11 @@
 @media only screen and (max-width: 1300px) {
   #projects {
     max-width: 80%;
+    .heading {
+      span {
+        display: none;
+      }
+    }
   }
 }
 

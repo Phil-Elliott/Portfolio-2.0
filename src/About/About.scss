@@ -1,7 +1,7 @@
 @import "./../Shared.scss";
 
 #about {
-  padding: 10% 0 4%;
+  padding: 10% 0 6%;
   margin: 0 auto;
   max-width: 40%;
 
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     color: $med-color;
-    font-size: clamp(0.8rem, 1.1vw, 2.25rem);
+    font-size: clamp(0.6rem, 1.1vw, 2.25rem);
 
     p {
       cursor: pointer;
@@ -52,8 +52,8 @@
   .about-content {
     p {
       color: $med-color;
-      font-size: clamp(0.8rem, 1.1vw, 2.25rem);
-      line-height: 170%;
+      font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+      line-height: 180%;
       margin-bottom: 2%;
       text-indent: 7%;
     }
@@ -69,6 +69,9 @@
         display: none;
       }
     }
+  }
+  .about-content-container {
+    gap: 1rem;
   }
 }
 
