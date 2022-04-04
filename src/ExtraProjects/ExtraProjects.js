@@ -7,7 +7,7 @@ const ExtraProjects = () => {
     {
       title: "CRYPTO Landing Page",
       description:
-        "An interactive and dynamic landing page. It is connected to the CoinGecko API that pulls data from the top five crypto currencies. It is also connected to the Alpha Advantage API to show exchange rates.",
+        "An interactive and dynamic landing page. It is connected to the CoinGecko API that pulls data from the top five crypto currencies. It is also displays current exchange rates.",
       tech: ["HTML", "Scss", "JavaScript"],
       github: "https://github.com/Phil-Elliott/Crypto-landing-page",
       site: "https://phil-elliott.github.io/Crypto-landing-page/",
