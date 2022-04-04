@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import news from "./news.png"
+import news from "./news-screenshot.png"
 import gif from "./News.gif"
 
 const Project0 = () => {

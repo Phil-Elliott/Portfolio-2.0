@@ -13,8 +13,8 @@ const Skills = () => {
         <FaNode className="logo-set2 node" />
         <FaSass className="logo-set2 sass" />
         <FaJs className="logo-set1 js" />
-        <p className="logo-set3 express">Express</p>
-        <p className="logo-set3 post">PostgreSQL </p>
+        <p className="logo-set3 express">TypeScript</p>
+        <p className="logo-set3 post">Redux </p>
         <p className="logo-set3 es6">ES6 </p>
       </div>
     </div>
