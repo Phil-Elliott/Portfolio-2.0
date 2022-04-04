@@ -25,46 +25,8 @@ const App = () => {
 export default App
 
 /*
-  Structure 
-    1) Navbar 
-      - About 
-      - Skills 
-      - Projects 
-      - Contact 
-      - Resume button 
-    2) Main Page 
-      - Cool header 
-      - Hire me button (Jumps to the contact Page ) 
-        Wait for later on below 
-      - Email on right side 
-      - Socials on other side 
-    3) About 
-      - Short and sweet 
-        - Highlight degree and teaching experience 
-        - Talk a little about your passion for this career path 
-    4) Skills 
-      - Copy one of the two that you were looking at earlier 
+  change pics to gif with one screen shot (will be clearer) - onhover
+  change min-width of about section so its not moving 
 
-          -Html 
-          -CSS
-          -JS
-          -React
-          -Node
-          - Express
-          - PostGresql
-          -Sass
-          - MUI
-
-    5) Projects 
-      - Copy the same format as hers 
-        - Have gif videos on the left 
-    6) Contact 
-      - Have a contact area 
-        - copy someone elses 
-        - Have it sent to me 
-    
-    extra
-      - add google analytics 
-      - change scrollbar on right
 
 */

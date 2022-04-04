@@ -1,46 +1,50 @@
-import React from "react"
+import React, { useState } from "react"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import fitmax from "./fitmax.gif"
+import news from "./news.png"
+import gif from "./News.gif"
 
-const Project1 = () => {
+const Project0 = () => {
   return (
-    <div className="project gif-left">
-      <div className="gif">
-        <img className="gif" alt="fitmax" src={fitmax} />
-      </div>
-      <div className="project-info">
+    <div className="project gif-right">
+      <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
-        <a href="https://fitmax.herokuapp.com">FitMax Health App</a>
+        <a href="https://62066f824ae8c30008b24c53--pedantic-bhabha-23f3dd.netlify.app/">
+          News App
+        </a>
         <div className="description-container">
-          <p className="project-description">
-            The application has been deployed on Heroku, so it could take a
-            little while to load. You can create your own account or use the
-            account and password below.
-            <br />
-            'user@gmail.com' 'password123'
+          <p className="project-description" style={{ textAlign: "left" }}>
+            A news application that is connected to the Guardian API. It
+            provides the user with a variety of news tags to choose from. There
+            is also a search bar to use to find specific news articles.
           </p>
         </div>
         <ul>
           <li>React</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
+          <li>TypeScript</li>
           <li>Sass</li>
         </ul>
         <div className="icons">
           <a
             aria-label="Github"
-            href="https://github.com/Phil-Elliott/FitMax-Health-Dashboard"
+            href="https://github.com/Phil-Elliott/News-Website"
           >
             <FaGithub className="icon" />
           </a>
-          <a aria-label="Website" href="https://fitmax.herokuapp.com">
+          <a
+            aria-label="Website"
+            href="https://62066f824ae8c30008b24c53--pedantic-bhabha-23f3dd.netlify.app/"
+          >
             <FaExternalLinkAlt className="icon" />
           </a>
         </div>
+      </div>
+      <div className="gif-container">
+        <a href="https://62066f824ae8c30008b24c53--pedantic-bhabha-23f3dd.netlify.app/">
+          <img className="gif" alt="portfolio" src={news} />
+        </a>
       </div>
     </div>
   )
 }
 
-export default Project1
+export default Project0
