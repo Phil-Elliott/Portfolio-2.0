@@ -1,8 +1,19 @@
-import React from "react"
-import "./ExtraProjects.scss"
-import Project from "./Components/Project"
+import React, { useState, useRef, useEffect } from "react";
+import "./ExtraProjects.scss";
+import Project from "./Components/Project";
+import { Animate } from "../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const ExtraProjects = () => {
+  const projectRef = useRef(null);
+  const q = gsap.utils.selector(projectRef);
+
+  useEffect(() => {
+    Animate(projectRef.current, q);
+  }, []);
+
   const dataArr = [
     {
       title: "CRYPTO Landing Page",
@@ -44,14 +55,14 @@ const ExtraProjects = () => {
       github: "https://github.com/Phil-Elliott/Nintendo-email-clone",
       site: "https://phil-elliott.github.io/Nintendo-email-clone/",
     },
-  ]
+  ];
 
   return (
-    <div id="extra-projects">
-      <div className="extra-heading">
+    <div id="extra-projects" ref={projectRef}>
+      <div className="extra-heading animate">
         <h1>Other Projects</h1>
       </div>
-      <div className="extra-content-container">
+      <div className="extra-content-container animate">
         {dataArr.map((item, i) => {
           return (
             <Project
@@ -62,14 +73,14 @@ const ExtraProjects = () => {
               github={item.github}
               site={item.site}
             />
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ExtraProjects
+export default ExtraProjects;
 
 /*  
     1) header 

@@ -1,11 +1,20 @@
-import React, { useState } from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import news from "./news-screenshot.png"
-import gif from "./News.gif"
+import React, { useState, useRef, useEffect } from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import news from "./news-screenshot.png";
+import { SimpleAnimate } from "../../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Project0 = () => {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    SimpleAnimate(projectRef.current);
+  }, []);
+
   return (
-    <div className="project gif-right">
+    <div className="project gif-right" ref={projectRef}>
       <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
         <a href="https://pedantic-bhabha-23f3dd.netlify.app/">News App</a>
@@ -42,7 +51,7 @@ const Project0 = () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project0
+export default Project0;

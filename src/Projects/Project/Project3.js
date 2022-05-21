@@ -1,11 +1,20 @@
-import React, { useState } from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import quickbrew from "./Quickbrew.png"
-import gif from "./quickbrew.gif"
+import React, { useState, useRef, useEffect } from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import quickbrew from "./Quickbrew.png";
+import { SimpleAnimate } from "../../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Project2 = () => {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    SimpleAnimate(projectRef.current);
+  }, []);
+
   return (
-    <div className="project gif-right">
+    <div className="project gif-right" ref={projectRef}>
       <div className="project-info" style={{ alignItems: "flex-start" }}>
         <p className="project-heading">Featured Project</p>
         <a href="https://quick-brew.herokuapp.com">Quick Brew Website</a>
@@ -41,7 +50,7 @@ const Project2 = () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project2
+export default Project2;

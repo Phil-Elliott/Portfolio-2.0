@@ -1,10 +1,20 @@
-import React, { useState } from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import img from "./screenshot-pm-app.png"
+import React, { useState, useRef, useEffect } from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import img from "./screenshot-pm-app.png";
+import { SimpleAnimate } from "../../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Project3 = () => {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    SimpleAnimate(projectRef.current);
+  }, []);
+
   return (
-    <div className="project gif-left">
+    <div className="project gif-left" ref={projectRef}>
       <div className="gif-container">
         <a href="https://phil-elliott.github.io/Project_Management-App/">
           <img className="gif" alt="portfolio" src={img} />
@@ -44,7 +54,7 @@ const Project3 = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project3
+export default Project3;

@@ -1,11 +1,20 @@
-import React, { useState } from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import fitmax from "./FitMax.png"
-import gif from "./fitmax.gif"
+import React, { useState, useRef, useEffect } from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import fitmax from "./FitMax.png";
+import { SimpleAnimate } from "../../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Project1 = () => {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    SimpleAnimate(projectRef.current);
+  }, []);
+
   return (
-    <div className="project gif-left">
+    <div className="project gif-left" ref={projectRef}>
       <div className="gif-container">
         <a href="https://fitmax.herokuapp.com">
           <img className="gif" alt="fitmax" src={fitmax} />
@@ -43,7 +52,7 @@ const Project1 = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project1
+export default Project1;
