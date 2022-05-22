@@ -26,7 +26,6 @@ export default App;
 
 /*
   1) Add animations to dropdown menu
-  1 part 2) Make navbar sticky
   2) Add links to eamil, gethub, linkedin (right bottom - maybe have go down screen)
   3) Make skills move on hover 
   4) Fix responsiveness

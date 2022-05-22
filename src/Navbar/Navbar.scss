@@ -2,6 +2,7 @@
 
 .navbar {
   background-color: $bg-color;
+  opacity: 0.95;
   display: flex;
   align-items: center;
   font-family: "Roboto Mono", monospace;
@@ -9,6 +10,7 @@
   width: 100%;
   position: fixed;
   z-index: 100;
+  transition: all 0.5s ease-in-out;
 
   ul {
     display: flex;
@@ -42,6 +44,11 @@
       }
     }
   }
+}
+
+.nav-hidden {
+  transform: translateY(-100px);
+  transition: all 0.5s ease-in-out;
 }
 
 .toggle-button {
