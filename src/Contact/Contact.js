@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Contact.scss";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Animate } from "../functions/Gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,6 +26,17 @@ const Contact = () => {
       <p className="contact-btn animate">
         <a href="mailto:PhillipPElliott@gmail.com">Contact Me</a>
       </p>
+      <div className="contact-links">
+        <a aria-label="Github" href="https://github.com/Phil-Elliott">
+          <FaGithub className="icon" />
+        </a>
+        <a
+          aria-label="Linkedin"
+          href="https://www.linkedin.com/in/phil-p-elliott/"
+        >
+          <FaLinkedinIn className="icon" />
+        </a>
+      </div>
     </div>
   );
 };

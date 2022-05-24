@@ -1,0 +1,54 @@
+@import "./../Shared.scss";
+
+.links-container {
+  color: $med-color;
+  position: fixed;
+  display: grid;
+  left: 5rem;
+  bottom: 0rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: $light-color;
+    font-size: clamp(1rem, 1.85vw, 3rem);
+    text-decoration: none;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+
+  .icon {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: clamp(0.8rem, 1.2vw, 2.5rem);
+    margin: 100% 0px;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+  span {
+    // border-bottom: 1px solid $light-color;
+    opacity: 0.3;
+    border-left: 1px solid $light-color;
+    height: 8rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .links-container {
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  .links-container {
+    display: none;
+  }
+}

@@ -7,11 +7,13 @@ import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import ExtraProjects from "./ExtraProjects/ExtraProjects";
 import Contact from "./Contact/Contact";
+import Links from "./Links/Links";
 
 const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <Links />
       <Main />
       <About />
       <Skills />
@@ -31,5 +33,20 @@ export default App;
   4) Fix responsiveness
   5) Upload new portfolio
 
+
+  // make pe book animation at loader 
+// Add photoshopped images to resume
+
+add animations to links
+center title on main page
+
+need to put left links inside of dropdown responsive
+
+
+
+
+1) 1300 to 900 move farther left 
+2) Then move github and linkedin to the bottom 
+3) Add hove words to each button on screen - project links
 
 */

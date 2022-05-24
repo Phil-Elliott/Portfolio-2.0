@@ -1,8 +1,10 @@
 @import "./../Shared.scss";
 
 #main {
-  padding: 13.5% 0 8%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 0 20%;
   max-width: 65%;
   min-height: 90vh;
 
