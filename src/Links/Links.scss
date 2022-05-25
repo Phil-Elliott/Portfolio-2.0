@@ -23,7 +23,6 @@
   }
 
   .icon {
-    margin-bottom: 1rem;
     cursor: pointer;
     font-size: clamp(0.8rem, 1.2vw, 2.5rem);
     margin: 100% 0px;
@@ -38,6 +37,7 @@
     border-left: 1px solid $light-color;
     height: 8rem;
     margin-left: 0.5rem;
+    margin-top: 100%;
   }
 }
 

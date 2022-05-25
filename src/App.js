@@ -27,6 +27,14 @@ const App = () => {
 export default App;
 
 /*
+  deploy new portfolio
+  learn ssh
+  add images to resume
+  setup windows OS
+
+
+
+
   1) Add animations to dropdown menu
   2) Add links to eamil, gethub, linkedin (right bottom - maybe have go down screen)
   3) Make skills move on hover 

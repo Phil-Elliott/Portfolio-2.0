@@ -119,7 +119,7 @@
         .icon {
           cursor: pointer;
           font-size: clamp(0.8rem, 1.2vw, 2.5rem);
-          margin: 65% 10px;
+          margin: 65% 10px 0;
 
           &:hover {
             color: $green-color;
@@ -145,6 +145,10 @@
 @media only screen and (max-width: 900px) {
   #projects {
     max-width: 90%;
+
+    .icon {
+      margin: 65% 10px !important;
+    }
   }
   .gif-left,
   .gif-right {

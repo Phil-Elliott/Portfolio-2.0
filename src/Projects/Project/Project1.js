@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import news from "./news-screenshot.png";
+import { StyledTooltip } from "../../functions/Tooltip";
 import { SimpleAnimate } from "../../functions/Gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,18 +32,22 @@ const Project0 = () => {
           <li>Sass</li>
         </ul>
         <div className="icons">
-          <a
-            aria-label="Github"
-            href="https://github.com/Phil-Elliott/News-Website"
-          >
-            <FaGithub className="icon" />
-          </a>
-          <a
-            aria-label="Website"
-            href="https://pedantic-bhabha-23f3dd.netlify.app/"
-          >
-            <FaExternalLinkAlt className="icon" />
-          </a>
+          <StyledTooltip title="Github">
+            <a
+              aria-label="Github"
+              href="https://github.com/Phil-Elliott/News-Website"
+            >
+              <FaGithub className="icon" />
+            </a>
+          </StyledTooltip>
+          <StyledTooltip title="Website">
+            <a
+              aria-label="Website"
+              href="https://pedantic-bhabha-23f3dd.netlify.app/"
+            >
+              <FaExternalLinkAlt className="icon" />
+            </a>
+          </StyledTooltip>
         </div>
       </div>
       <div className="gif-container">
