@@ -1,8 +1,25 @@
-import React, { useState } from "react"
-import "./About.scss"
+import React, { useState, useRef, useEffect } from "react";
+import "./About.scss";
+import { Animate, AboutAnimate } from "../functions/Gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const [dataNum, setDataNum] = useState(0)
+  const [dataNum, setDataNum] = useState(0);
+  const aboutRef = useRef(null);
+  const q = gsap.utils.selector(aboutRef);
+  const parRef = useRef(null);
+
+  useEffect(() => {
+    Animate(aboutRef.current, q);
+  }, []);
+
+  useEffect(() => {
+    // if (prevDataRef === dataNum) {
+    AboutAnimate(parRef.current);
+    // }
+  }, [dataNum]);
 
   const dataArr = [
     {
@@ -17,48 +34,61 @@ const About = () => {
     {
       par1: "I have not spent a lot of time learning how to work with backend software. I have learned enough to get a grasp on how everything works and what is needed on the backend. I have learned how to build a basic API in Node, while using Express. I have also been able to learn how to build a database in PostgreSQL. I know I still have a lot to learn, but I am looking forward to it.",
     },
-  ]
+  ];
+
+  const getDataNum = (num) => {
+    setDataNum(num);
+  };
 
   return (
-    <div id="about">
-      <div className="heading">
+    <div id="about" ref={aboutRef}>
+      <div className="heading animate">
         <h2>About Me</h2>
         <span></span>
       </div>
-      <div className="about-content-container">
+      <div className="about-content-container animate">
         <div className="about-tags">
           <p
             className={dataNum === 0 ? "active" : "notActive"}
-            onClick={() => setDataNum(0)}
+            onClick={() => getDataNum(0)}
           >
             About
           </p>
           <p
             className={dataNum === 1 ? "active" : "notActive"}
-            onClick={() => setDataNum(1)}
+            onClick={() => getDataNum(1)}
           >
             Background
           </p>
           <p
             className={dataNum === 2 ? "active" : "notActive"}
-            onClick={() => setDataNum(2)}
+            onClick={() => getDataNum(2)}
           >
             Front-End
           </p>
           <p
             className={dataNum === 3 ? "active" : "notActive"}
-            onClick={() => setDataNum(3)}
+            onClick={() => getDataNum(3)}
           >
             Back-End
           </p>
         </div>
         <div className="about-content">
-          <p>{dataArr[dataNum].par1}</p>
-          <p>{dataArr[dataNum].par2}</p>
+          <p ref={parRef}>{dataArr[dataNum].par1}</p>
+          {/* <p>{dataArr[dataNum].par2}</p> */}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
+
+/*
+  use gsap 
+
+  - triggered when something is clicked 
+  - changing opacity 
+
+onClick={() => setChangeData(!changeData)}
+*/

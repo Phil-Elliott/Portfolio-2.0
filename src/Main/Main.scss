@@ -1,14 +1,17 @@
 @import "./../Shared.scss";
 
 #main {
-  padding: 13.5% 0 8%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 0 20%;
   max-width: 65%;
+  min-height: 90vh;
 
   h1 {
     color: $green-color;
     font-family: "Roboto Mono", monospace;
-    font-size: clamp(1rem, 1.1vw, 1.75rem);
+    font-size: clamp(1rem, 1.25vw, 2rem);
     padding-bottom: 3%;
     padding-bottom: clamp(1.25rem, 4%, 4%);
     padding-left: 0.25%;
@@ -23,7 +26,7 @@
   h3 {
     color: $med-color;
     font-size: clamp(2rem, 3.9vw, 7rem);
-    padding-bottom: clamp(2rem, 4%, 4%);
+    padding-bottom: clamp(2.5rem, 5%, 5%);
   }
 
   p {

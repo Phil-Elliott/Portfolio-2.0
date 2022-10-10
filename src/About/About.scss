@@ -4,6 +4,7 @@
   padding: 10% 0 6%;
   margin: 0 auto;
   max-width: 40%;
+  min-height: 80vh;
 
   .heading {
     display: grid;
@@ -50,6 +51,7 @@
   }
 
   .about-content {
+    transform: opacity 0.5s ease-in-out;
     p {
       color: $med-color;
       font-size: clamp(0.8rem, 1.2vw, 2.5rem);

@@ -1,17 +1,19 @@
-import React from "react"
-import "./App.scss"
-import Navbar from "./Navbar/Navbar"
-import Main from "./Main/Main"
-import About from "./About/About"
-import Skills from "./Skills/Skills"
-import Projects from "./Projects/Projects"
-import ExtraProjects from "./ExtraProjects/ExtraProjects"
-import Contact from "./Contact/Contact"
+import React from "react";
+import "./App.scss";
+import Navbar from "./Navbar/Navbar";
+import Main from "./Main/Main";
+import About from "./About/About";
+import Skills from "./Skills/Skills";
+import Projects from "./Projects/Projects";
+import ExtraProjects from "./ExtraProjects/ExtraProjects";
+import Contact from "./Contact/Contact";
+import Links from "./Links/Links";
 
 const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <Links />
       <Main />
       <About />
       <Skills />
@@ -19,52 +21,40 @@ const App = () => {
       <ExtraProjects />
       <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 
 /*
-  Structure 
-    1) Navbar 
-      - About 
-      - Skills 
-      - Projects 
-      - Contact 
-      - Resume button 
-    2) Main Page 
-      - Cool header 
-      - Hire me button (Jumps to the contact Page ) 
-        Wait for later on below 
-      - Email on right side 
-      - Socials on other side 
-    3) About 
-      - Short and sweet 
-        - Highlight degree and teaching experience 
-        - Talk a little about your passion for this career path 
-    4) Skills 
-      - Copy one of the two that you were looking at earlier 
+  deploy new portfolio
+  learn ssh
+  add images to resume
+  setup windows OS
 
-          -Html 
-          -CSS
-          -JS
-          -React
-          -Node
-          - Express
-          - PostGresql
-          -Sass
-          - MUI
 
-    5) Projects 
-      - Copy the same format as hers 
-        - Have gif videos on the left 
-    6) Contact 
-      - Have a contact area 
-        - copy someone elses 
-        - Have it sent to me 
-    
-    extra
-      - add google analytics 
-      - change scrollbar on right
+
+
+  1) Add animations to dropdown menu
+  2) Add links to eamil, gethub, linkedin (right bottom - maybe have go down screen)
+  3) Make skills move on hover 
+  4) Fix responsiveness
+  5) Upload new portfolio
+
+
+  // make pe book animation at loader 
+// Add photoshopped images to resume
+
+add animations to links
+center title on main page
+
+need to put left links inside of dropdown responsive
+
+
+
+
+1) 1300 to 900 move farther left 
+2) Then move github and linkedin to the bottom 
+3) Add hove words to each button on screen - project links
 
 */

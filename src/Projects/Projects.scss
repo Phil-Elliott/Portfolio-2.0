@@ -30,18 +30,43 @@
   .project {
     padding: 6% 0;
 
+    .gif-container {
+      position: relative;
+    }
+
+    .gif-background {
+      background-color: $green-color;
+      object-fit: contain;
+      z-index: 100;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      opacity: 0.4;
+      transition: all ease-in-out 0.5s;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+
     .gif {
       border-radius: 3px;
       height: 100%;
       width: 100%;
       object-fit: contain;
       transition: all ease-in-out 1s;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
     .project-info {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       margin-top: 5%;
+      z-index: 20;
 
       .project-heading {
         color: $green-color;
@@ -55,6 +80,10 @@
         font-size: clamp(1rem, 1.85vw, 3rem);
         padding-left: 1.25%;
         text-decoration: none;
+
+        &:hover {
+          color: $green-color;
+        }
       }
       .description-container {
         position: relative;
@@ -90,7 +119,7 @@
         .icon {
           cursor: pointer;
           font-size: clamp(0.8rem, 1.2vw, 2.5rem);
-          margin: 65% 10px;
+          margin: 65% 10px 0;
 
           &:hover {
             color: $green-color;
@@ -105,6 +134,7 @@
   #projects {
     max-width: 80%;
     .heading {
+      grid-template-columns: 1fr;
       span {
         display: none;
       }
@@ -115,6 +145,10 @@
 @media only screen and (max-width: 900px) {
   #projects {
     max-width: 90%;
+
+    .icon {
+      margin: 65% 10px !important;
+    }
   }
   .gif-left,
   .gif-right {

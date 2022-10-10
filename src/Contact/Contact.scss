@@ -43,11 +43,31 @@ $green-color: #64ffda;
       }
     }
   }
+  .contact-links {
+    margin-top: 3rem;
+    .icon {
+      margin-left: 1rem;
+      cursor: pointer;
+      color: $light-color;
+      font-size: clamp(1rem, 1.85vw, 3rem);
+      text-decoration: none;
+
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 450px) {
   #contact {
     max-width: 70%;
     padding: 2rem 0 8rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-links {
+    display: none;
   }
 }

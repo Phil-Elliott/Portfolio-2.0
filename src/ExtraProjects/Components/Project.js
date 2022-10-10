@@ -1,5 +1,6 @@
-import React from "react"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { StyledTooltip } from "../../functions/Tooltip";
 
 const Project = ({ title, description, tech, github, site }) => {
   return (
@@ -15,16 +16,20 @@ const Project = ({ title, description, tech, github, site }) => {
           <li>{tech[2]}</li>
         </ul>
         <div className="icons">
-          <a aria-label="Github" href={github}>
-            <FaGithub className="icon" />
-          </a>
-          <a aria-label="Website" href={site}>
-            <FaExternalLinkAlt className="icon" />
-          </a>
+          <StyledTooltip title="Github">
+            <a aria-label="Github" href={github}>
+              <FaGithub className="icon" />
+            </a>
+          </StyledTooltip>
+          <StyledTooltip title="Website">
+            <a aria-label="Website" href={site}>
+              <FaExternalLinkAlt className="icon" />
+            </a>
+          </StyledTooltip>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
