@@ -27,10 +27,13 @@ const App = () => {
 export default App;
 
 /*
-  deploy new portfolio
+  
   learn ssh
   add images to resume
   setup windows OS
+    get everything ready for vs code
+    get gitbash 
+    get putty for ssh
 
 
 
